@@ -50,7 +50,7 @@ export function Testimonials() {
                 <CardContent className="p-8 flex flex-col h-full gap-6">
                   {/* Decorative Quote Mark */}
                   <div className="absolute top-6 right-6 text-6xl font-heading text-tertiary opacity-10 group-hover:opacity-20 transition-opacity">
-                    "
+                    &quot;
                   </div>
 
                   <div className="flex gap-1">
@@ -60,7 +60,7 @@ export function Testimonials() {
                   </div>
                   
                   <p className="text-secondary italic leading-relaxed flex-1 relative z-10">
-                    "{testimonial.content}"
+                    &quot;{testimonial.content}&quot;
                   </p>
                   
                   <div className="flex items-center gap-4 mt-auto">
