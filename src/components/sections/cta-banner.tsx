@@ -23,7 +23,7 @@ export function CtaBanner() {
               Whether you need urgent remote support or an on-site hardware repair, our experts are ready to help.
             </p>
             <Button size="lg" className="group bg-base text-primary hover:bg-base/90" asChild>
-              <Link href="https://wa.me/message/your-number" target="_blank" rel="noopener noreferrer">
+              <Link href="https://wa.me/94755486826?text=Hello!%20I%20need%20some%20help%20with%20my%20computer." target="_blank" rel="noopener noreferrer">
                 WhatsApp Us
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Link>

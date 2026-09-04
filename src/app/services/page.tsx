@@ -148,7 +148,7 @@ export default function ServicesPage() {
                   </div>
 
                   <Button className="w-full group/btn bg-primary text-base hover:bg-primary/90" asChild>
-                    <Link href={`https://wa.me/message/your-number?text=Hi, I'm interested in the ${service.title} service.`} target="_blank" rel="noopener noreferrer">
+                    <Link href={`https://wa.me/94755486826?text=Hi, I'm interested in the ${service.title} service.`} target="_blank" rel="noopener noreferrer">
                       Request this service
                       <ArrowRight className="ml-2 w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
                     </Link>

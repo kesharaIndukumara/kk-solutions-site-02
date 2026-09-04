@@ -62,7 +62,7 @@ export function Header() {
           <div className="h-6 w-px bg-subtle" />
           <ThemeToggle />
           <Button asChild className="rounded-full">
-            <Link href="https://wa.me/message/your-number" target="_blank" rel="noopener noreferrer">
+            <Link href="https://wa.me/94755486826?text=Hello!%20I%20need%20some%20help%20with%20my%20computer." target="_blank" rel="noopener noreferrer">
               LET&apos;S TALK
             </Link>
           </Button>
@@ -103,7 +103,7 @@ export function Header() {
               ))}
             </ul>
             <Button asChild className="w-full">
-              <Link href="https://wa.me/message/your-number" target="_blank" rel="noopener noreferrer">
+              <Link href="https://wa.me/94755486826?text=Hello!%20I%20need%20some%20help%20with%20my%20computer." target="_blank" rel="noopener noreferrer">
                 LET&apos;S TALK
               </Link>
             </Button>

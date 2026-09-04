@@ -40,9 +40,11 @@ export function Hero() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-2">
-              <Button size="lg" className="group">
-                Book a Repair
-                <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              <Button size="lg" className="group" asChild>
+                <Link href="#contact">
+                  Book a Repair
+                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Link>
               </Button>
               <Button size="lg" variant="outline">
                 <Link href={"/services"} >
