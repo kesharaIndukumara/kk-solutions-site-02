@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@custom-variant light (&:where(.light, .light *));
+
+@theme inline {
+  /* Colors mapping */
+  --color-base: var(--bg-base);
+  --color-card: var(--bg-card);
+  --color-card-hover: var(--bg-card-hover);
+  --color-subtle: var(--border-subtle);
+  
+  --color-primary: var(--text-primary);
+  --color-secondary: var(--text-secondary);
+  --color-tertiary: var(--text-tertiary);
+  
+  --color-btn-fill: var(--btn-fill);
+  --color-btn-text: var(--btn-text);
+
+  /* Fonts */
+  --font-heading: var(--font-heading);
+  --font-body: var(--font-body);
+}
+
+:root {
+  /* Dark Mode (Default) */
+  --bg-base: #0D0D0F;
+  --bg-card: #17171A;
+  --bg-card-hover: #1C1C1F;
+  --border-subtle: #2A2A2E;
+  
+  --text-primary: #F5F5F3;
+  --text-secondary: #9A9A9E;
+  --text-tertiary: #6B6B70;
+  
+  --accent-metal-start: #4A4A4E;
+  --accent-metal-mid: #E8E8E6;
+  --accent-metal-end: #8A8A8E;
+  
+  --btn-fill: #F5F5F3;
+  --btn-text: #0D0D0F;
+}
+
+.light {
+  /* Light Mode */
+  --bg-base: #FAFAF8;
+  --bg-card: #FFFFFF;
+  --bg-card-hover: #F5F5F3;
+  --border-subtle: #E5E5E7;
+  
+  --text-primary: #0D0D0F;
+  --text-secondary: #52525A;
+  --text-tertiary: #9A9A9E;
+  
+  --accent-metal-start: #8A8A8E;
+  --accent-metal-mid: #3A3A3E;
+  --accent-metal-end: #6A6A6E;
+  
+  --btn-fill: #0D0D0F;
+  --btn-text: #F5F5F3;
+}
+
+@layer base {
+  html, body {
+    @apply bg-base text-secondary font-body;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  
+  html {
+    transition: background-color 0.3s ease, color 0.2s ease;
+  }
+}
+
+/* Custom Utilities for gradients */
+@layer utilities {
+  .text-gradient-metal {
+    background: linear-gradient(135deg, var(--accent-metal-start), var(--accent-metal-mid), var(--accent-metal-end));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .bg-gradient-metal {
+    background: linear-gradient(135deg, var(--accent-metal-start), var(--accent-metal-mid), var(--accent-metal-end));
+  }
+}
