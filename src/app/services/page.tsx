@@ -11,7 +11,6 @@ import {
   ArrowRight
 } from "lucide-react"
 import Link from "next/link"
-import { SectionHeading } from "@/components/ui/section-heading"
 import { GradientText } from "@/components/ui/gradient-text"
 import { Sparkle } from "@/components/icons/sparkle"
 import { Card, CardContent } from "@/components/ui/card"
@@ -136,7 +135,7 @@ export default function ServicesPage() {
 
                   <div className="bg-base rounded-2xl border border-subtle p-6 mb-8 flex-1">
                     <h3 className="text-[11px] font-medium tracking-[0.15em] text-tertiary uppercase mb-4">
-                      What's Included
+                      What&apos;s Included
                     </h3>
                     <ul className="flex flex-col gap-3">
                       {service.features.map((feature, idx) => (
