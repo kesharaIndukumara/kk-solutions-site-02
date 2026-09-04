@@ -5,7 +5,7 @@ import { Moon, Sun } from "lucide-react"
 import { useTheme } from "@/contexts/theme-context"
 
 export function ThemeToggle() {
-  const { theme, toggleTheme } = useTheme()
+  const { toggleTheme } = useTheme()
   const [mounted, setMounted] = React.useState(false)
 
   React.useEffect(() => {
