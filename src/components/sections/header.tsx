@@ -63,7 +63,7 @@ export function Header() {
           <ThemeToggle />
           <Button asChild className="rounded-full">
             <Link href="https://wa.me/message/your-number" target="_blank" rel="noopener noreferrer">
-              LET'S TALK
+              LET&apos;S TALK
             </Link>
           </Button>
         </nav>
@@ -104,7 +104,7 @@ export function Header() {
             </ul>
             <Button asChild className="w-full">
               <Link href="https://wa.me/message/your-number" target="_blank" rel="noopener noreferrer">
-                LET'S TALK
+                LET&apos;S TALK
               </Link>
             </Button>
           </motion.div>
