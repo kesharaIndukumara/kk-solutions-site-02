@@ -1,0 +1,18 @@
+{
+  "default_branch": "main",
+  "branches": [
+    "bugfix/fix-whatsapp-link-issue",
+    "cloudflare-deploy",
+    "main"
+  ],
+  "parent": {
+    "bugfix/fix-whatsapp-link-issue": "main",
+    "cloudflare-deploy": "main",
+    "main": null
+  },
+  "order": [
+    "main",
+    "bugfix/fix-whatsapp-link-issue",
+    "cloudflare-deploy"
+  ]
+}
